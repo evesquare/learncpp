@@ -1,6 +1,6 @@
 #include <iostream>
 
-int add(int, int); // forward declaration of add() (using a function declaration)
+int add(int, int); // 事前にadd()を宣言する
 
 int main()
 {
@@ -8,7 +8,7 @@ int main()
     return 0;
 }
 
-int add(int x, int y) // even though the body of add() isn't defined until here
+int add(int x, int y) // 事前に宣言されたadd()の定義
 {
     return x + y;
 }
